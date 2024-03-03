@@ -1,0 +1,978 @@
+2023-07-12 13:23:14,056 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Starting SpringbootBackendApplication using Java 17.0.7 on TORANA-L138 with PID 18152 (C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java\target\classes started by VivekRoy in C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java)
+2023-07-12 13:23:14,057 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-07-12 13:23:14,098 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-12 13:23:14,099 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-12 13:23:14,805 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-12 13:23:14,943 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 129 ms. Found 4 JPA repository interfaces.
+2023-07-12 13:23:15,607 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 4200 (https)
+2023-07-12 13:23:15,619 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 13:23:15,620 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-07-12 13:23:15,620 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-07-12 13:23:15,760 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-07-12 13:23:15,760 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1654 ms
+2023-07-12 13:23:15,993 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-07-12 13:23:16,119 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-07-12 13:23:16,245 INFO liquibase.database [restartedMain] Set default schema name to public
+2023-07-12 13:23:16,339 INFO liquibase.lockservice [restartedMain] Successfully acquired change log lock
+2023-07-12 13:23:16,361 INFO liquibase.changelog [restartedMain] Reading resource: db/changelog/changes/v100.sql
+2023-07-12 13:23:16,455 INFO liquibase.changelog [restartedMain] Reading from public.databasechangelog
+2023-07-12 13:23:16,487 INFO liquibase.lockservice [restartedMain] Successfully released change log lock
+2023-07-12 13:23:16,578 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-12 13:23:16,624 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-07-12 13:23:16,740 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-12 13:23:16,822 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-07-12 13:23:16,843 INFO Hibernate Types [restartedMain] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2023-07-12 13:23:16,858 INFO org.hibernate.envers.boot.internal.EnversServiceImpl [restartedMain] Envers integration enabled? : true
+2023-07-12 13:23:17,331 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-12 13:23:17,336 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 13:23:17,431 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-12 13:23:17,669 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d01b9f5, org.springframework.security.web.context.SecurityContextPersistenceFilter@59d76b9d, org.springframework.security.web.header.HeaderWriterFilter@6063937e, org.springframework.security.web.csrf.CsrfFilter@33caca1c, org.springframework.security.web.authentication.logout.LogoutFilter@6bdc993a, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@3f5eb50c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cca3261, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31e554a3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ac6f8ff, org.springframework.security.web.session.SessionManagementFilter@1dddfdf5, org.springframework.security.web.access.ExceptionTranslationFilter@5fafcc3b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@30e0e208]
+2023-07-12 13:23:17,889 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-12 13:23:18,047 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-07-12 13:23:18,549 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-07-12 13:23:18,560 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 13:23:18,677 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 4200 (https) with context path ''
+2023-07-12 13:23:18,685 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Started SpringbootBackendApplication in 5.04 seconds (JVM running for 5.574)
+2023-07-12 13:23:28,498 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [https-jsse-nio-4200-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-12 13:23:28,499 INFO org.springframework.web.servlet.DispatcherServlet [https-jsse-nio-4200-exec-6] Initializing Servlet 'dispatcherServlet'
+2023-07-12 13:23:28,499 INFO org.springframework.web.servlet.DispatcherServlet [https-jsse-nio-4200-exec-6] Completed initialization in 0 ms
+2023-07-12 13:23:29,007 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-6] getPrincipal() ::org.springframework.security.oauth2.jwt.Jwt@49bd7572
+2023-07-12 13:23:29,007 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-6] getCredentials() ::org.springframework.security.oauth2.jwt.Jwt@49bd7572
+2023-07-12 13:23:29,007 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-6] getAuthorities() ::[SCOPE_FileReader, SCOPE_FileWriter, APPROLE_User]
+2023-07-12 13:23:29,007 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-6] getDetails()WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null]
+2023-07-12 13:23:29,007 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-6] getName()::uMT7AMeFtwfvA7IuB-GBLmAwG4ficq-8tCzvZTw2ktY
+2023-07-12 13:23:29,007 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-6] getClass::class org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken
+2023-07-12 13:23:29,008 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-6] hello erooror happen
+2023-07-12 13:23:35,878 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 13:23:35,880 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-07-12 13:23:35,882 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-07-12 14:53:40,081 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Starting SpringbootBackendApplication using Java 17.0.7 on TORANA-L138 with PID 4144 (C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java\target\classes started by VivekRoy in C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java)
+2023-07-12 14:53:40,081 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-07-12 14:53:40,120 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-12 14:53:40,120 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-12 14:53:40,771 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-12 14:53:40,904 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 124 ms. Found 4 JPA repository interfaces.
+2023-07-12 14:53:41,572 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 4200 (https)
+2023-07-12 14:53:41,583 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 14:53:41,584 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-07-12 14:53:41,584 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-07-12 14:53:41,699 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-07-12 14:53:41,700 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1578 ms
+2023-07-12 14:53:41,948 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-07-12 14:53:42,086 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-07-12 14:53:42,220 INFO liquibase.database [restartedMain] Set default schema name to public
+2023-07-12 14:53:42,315 INFO liquibase.lockservice [restartedMain] Successfully acquired change log lock
+2023-07-12 14:53:42,336 INFO liquibase.changelog [restartedMain] Reading resource: db/changelog/changes/v100.sql
+2023-07-12 14:53:42,412 INFO liquibase.changelog [restartedMain] Reading from public.databasechangelog
+2023-07-12 14:53:42,447 INFO liquibase.lockservice [restartedMain] Successfully released change log lock
+2023-07-12 14:53:42,551 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-12 14:53:42,590 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-07-12 14:53:42,695 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-12 14:53:42,774 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-07-12 14:53:42,795 INFO Hibernate Types [restartedMain] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2023-07-12 14:53:42,809 INFO org.hibernate.envers.boot.internal.EnversServiceImpl [restartedMain] Envers integration enabled? : true
+2023-07-12 14:53:43,264 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-12 14:53:43,270 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 14:53:43,365 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-12 14:53:43,587 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60de0dc2, org.springframework.security.web.context.SecurityContextPersistenceFilter@41ece131, org.springframework.security.web.header.HeaderWriterFilter@1fd7c3d4, org.springframework.security.web.csrf.CsrfFilter@24456e97, org.springframework.security.web.authentication.logout.LogoutFilter@19282577, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@599f701a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b84f2b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45fb1078, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@527870a0, org.springframework.security.web.session.SessionManagementFilter@3939e92b, org.springframework.security.web.access.ExceptionTranslationFilter@5ddf7f29, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52bc150c]
+2023-07-12 14:53:43,812 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-12 14:53:43,972 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-07-12 14:53:44,550 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-07-12 14:53:44,563 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 14:53:44,679 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 4200 (https) with context path ''
+2023-07-12 14:53:44,688 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Started SpringbootBackendApplication in 4.987 seconds (JVM running for 5.497)
+2023-07-12 14:54:02,585 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 14:54:02,587 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-07-12 14:54:02,589 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-07-12 14:54:04,557 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Starting SpringbootBackendApplication using Java 17.0.7 on TORANA-L138 with PID 748 (C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java\target\classes started by VivekRoy in C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java)
+2023-07-12 14:54:04,558 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-07-12 14:54:04,596 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-12 14:54:04,596 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-12 14:54:05,255 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-12 14:54:05,388 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 125 ms. Found 4 JPA repository interfaces.
+2023-07-12 14:54:06,142 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 4200 (https)
+2023-07-12 14:54:06,156 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 14:54:06,156 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-07-12 14:54:06,157 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-07-12 14:54:06,279 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-07-12 14:54:06,279 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1682 ms
+2023-07-12 14:54:06,544 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-07-12 14:54:06,674 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-07-12 14:54:06,794 INFO liquibase.database [restartedMain] Set default schema name to public
+2023-07-12 14:54:06,904 INFO liquibase.lockservice [restartedMain] Successfully acquired change log lock
+2023-07-12 14:54:06,921 INFO liquibase.changelog [restartedMain] Reading resource: db/changelog/changes/v100.sql
+2023-07-12 14:54:06,987 INFO liquibase.changelog [restartedMain] Reading from public.databasechangelog
+2023-07-12 14:54:07,016 INFO liquibase.lockservice [restartedMain] Successfully released change log lock
+2023-07-12 14:54:07,123 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-12 14:54:07,159 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-07-12 14:54:07,265 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-12 14:54:07,343 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-07-12 14:54:07,363 INFO Hibernate Types [restartedMain] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2023-07-12 14:54:07,377 INFO org.hibernate.envers.boot.internal.EnversServiceImpl [restartedMain] Envers integration enabled? : true
+2023-07-12 14:54:07,814 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-12 14:54:07,820 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 14:54:07,910 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-12 14:54:08,125 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f6a621d, org.springframework.security.web.context.SecurityContextPersistenceFilter@635ae81c, org.springframework.security.web.header.HeaderWriterFilter@59d76b9d, org.springframework.security.web.csrf.CsrfFilter@26bf8114, org.springframework.security.web.authentication.logout.LogoutFilter@6591c6ea, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@2d91b380, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24a1278d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d9a3022, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c6473c3, org.springframework.security.web.session.SessionManagementFilter@47a8ddf2, org.springframework.security.web.access.ExceptionTranslationFilter@1dddfdf5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39003b0]
+2023-07-12 14:54:08,299 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-12 14:54:08,432 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-07-12 14:54:08,935 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-07-12 14:54:08,948 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 14:54:09,068 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 4200 (https) with context path ''
+2023-07-12 14:54:09,077 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Started SpringbootBackendApplication in 4.913 seconds (JVM running for 5.451)
+2023-07-12 14:54:12,388 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 14:54:12,390 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-07-12 14:54:12,392 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-07-12 14:54:14,180 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Starting SpringbootBackendApplication using Java 17.0.7 on TORANA-L138 with PID 11924 (C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java\target\classes started by VivekRoy in C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java)
+2023-07-12 14:54:14,180 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-07-12 14:54:14,215 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-12 14:54:14,216 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-12 14:54:14,859 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-12 14:54:14,995 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 126 ms. Found 4 JPA repository interfaces.
+2023-07-12 14:54:15,619 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 4200 (https)
+2023-07-12 14:54:15,635 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 14:54:15,636 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-07-12 14:54:15,636 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-07-12 14:54:15,755 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-07-12 14:54:15,755 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1539 ms
+2023-07-12 14:54:15,986 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-07-12 14:54:16,110 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-07-12 14:54:16,235 INFO liquibase.database [restartedMain] Set default schema name to public
+2023-07-12 14:54:16,335 INFO liquibase.lockservice [restartedMain] Successfully acquired change log lock
+2023-07-12 14:54:16,351 INFO liquibase.changelog [restartedMain] Reading resource: db/changelog/changes/v100.sql
+2023-07-12 14:54:16,419 INFO liquibase.changelog [restartedMain] Reading from public.databasechangelog
+2023-07-12 14:54:16,446 INFO liquibase.lockservice [restartedMain] Successfully released change log lock
+2023-07-12 14:54:16,538 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-12 14:54:16,576 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-07-12 14:54:16,684 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-12 14:54:16,763 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-07-12 14:54:16,783 INFO Hibernate Types [restartedMain] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2023-07-12 14:54:16,798 INFO org.hibernate.envers.boot.internal.EnversServiceImpl [restartedMain] Envers integration enabled? : true
+2023-07-12 14:54:17,252 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-12 14:54:17,258 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 14:54:17,357 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-12 14:54:17,612 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f6a621d, org.springframework.security.web.context.SecurityContextPersistenceFilter@635ae81c, org.springframework.security.web.header.HeaderWriterFilter@59d76b9d, org.springframework.security.web.csrf.CsrfFilter@26bf8114, org.springframework.security.web.authentication.logout.LogoutFilter@6591c6ea, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@2d91b380, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24a1278d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d9a3022, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c6473c3, org.springframework.security.web.session.SessionManagementFilter@47a8ddf2, org.springframework.security.web.access.ExceptionTranslationFilter@1dddfdf5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39003b0]
+2023-07-12 14:54:17,822 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-12 14:54:17,963 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-07-12 14:54:18,467 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-07-12 14:54:18,479 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 14:54:18,598 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 4200 (https) with context path ''
+2023-07-12 14:54:18,607 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Started SpringbootBackendApplication in 4.811 seconds (JVM running for 5.347)
+2023-07-12 14:55:00,477 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [https-jsse-nio-4200-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-12 14:55:00,477 INFO org.springframework.web.servlet.DispatcherServlet [https-jsse-nio-4200-exec-6] Initializing Servlet 'dispatcherServlet'
+2023-07-12 14:55:00,478 INFO org.springframework.web.servlet.DispatcherServlet [https-jsse-nio-4200-exec-6] Completed initialization in 1 ms
+2023-07-12 14:55:01,037 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-6] getPrincipal() ::org.springframework.security.oauth2.jwt.Jwt@b4fb12e1
+2023-07-12 14:55:01,037 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-6] getCredentials() ::org.springframework.security.oauth2.jwt.Jwt@b4fb12e1
+2023-07-12 14:55:01,037 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-6] getAuthorities() ::[SCOPE_FileReader, SCOPE_FileWriter, APPROLE_User]
+2023-07-12 14:55:01,037 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-6] getDetails()WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null]
+2023-07-12 14:55:01,037 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-6] getName()::uMT7AMeFtwfvA7IuB-GBLmAwG4ficq-8tCzvZTw2ktY
+2023-07-12 14:55:01,037 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-6] getClass::class org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken
+2023-07-12 14:55:01,038 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-6] hello erooror happen
+2023-07-12 14:58:21,543 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 14:58:21,545 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-07-12 14:58:21,547 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-07-12 14:58:24,279 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Starting SpringbootBackendApplication using Java 17.0.7 on TORANA-L138 with PID 16732 (C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java\target\classes started by VivekRoy in C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java)
+2023-07-12 14:58:24,281 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-07-12 14:58:24,323 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-12 14:58:24,323 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-12 14:58:25,073 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-12 14:58:25,207 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 125 ms. Found 4 JPA repository interfaces.
+2023-07-12 14:58:25,883 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 4200 (https)
+2023-07-12 14:58:25,895 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 14:58:25,895 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-07-12 14:58:25,896 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-07-12 14:58:25,997 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-07-12 14:58:25,997 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1673 ms
+2023-07-12 14:58:26,249 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-07-12 14:58:26,377 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-07-12 14:58:26,508 INFO liquibase.database [restartedMain] Set default schema name to public
+2023-07-12 14:58:26,593 INFO liquibase.lockservice [restartedMain] Successfully acquired change log lock
+2023-07-12 14:58:26,613 INFO liquibase.changelog [restartedMain] Reading resource: db/changelog/changes/v100.sql
+2023-07-12 14:58:26,689 INFO liquibase.changelog [restartedMain] Reading from public.databasechangelog
+2023-07-12 14:58:26,722 INFO liquibase.lockservice [restartedMain] Successfully released change log lock
+2023-07-12 14:58:26,830 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-12 14:58:26,875 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-07-12 14:58:26,991 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-12 14:58:27,073 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-07-12 14:58:27,095 INFO Hibernate Types [restartedMain] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2023-07-12 14:58:27,109 INFO org.hibernate.envers.boot.internal.EnversServiceImpl [restartedMain] Envers integration enabled? : true
+2023-07-12 14:58:27,568 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-12 14:58:27,574 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 14:58:27,673 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-12 14:58:27,906 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e73a792, org.springframework.security.web.context.SecurityContextPersistenceFilter@7190c1c8, org.springframework.security.web.header.HeaderWriterFilter@3e871cdf, org.springframework.security.web.csrf.CsrfFilter@67954179, org.springframework.security.web.authentication.logout.LogoutFilter@357b303, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@9a02e01, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4041d028, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47cf9c39, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ef986f0, org.springframework.security.web.session.SessionManagementFilter@6fb1cf5b, org.springframework.security.web.access.ExceptionTranslationFilter@6d79ae61, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55dcfe8e]
+2023-07-12 14:58:28,107 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-12 14:58:28,232 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-07-12 14:58:28,699 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-07-12 14:58:28,710 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 14:58:28,821 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 4200 (https) with context path ''
+2023-07-12 14:58:28,831 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Started SpringbootBackendApplication in 4.959 seconds (JVM running for 5.501)
+2023-07-12 15:01:11,720 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [https-jsse-nio-4200-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-12 15:01:11,720 INFO org.springframework.web.servlet.DispatcherServlet [https-jsse-nio-4200-exec-6] Initializing Servlet 'dispatcherServlet'
+2023-07-12 15:01:11,721 INFO org.springframework.web.servlet.DispatcherServlet [https-jsse-nio-4200-exec-6] Completed initialization in 1 ms
+2023-07-12 15:01:12,310 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-6] Vivek  Roy
+2023-07-12 15:55:49,998 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 15:55:50,001 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-07-12 15:55:50,003 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-07-12 18:00:57,465 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Starting SpringbootBackendApplication using Java 17.0.7 on TORANA-L138 with PID 2548 (C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java\target\classes started by VivekRoy in C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java)
+2023-07-12 18:00:57,466 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-07-12 18:00:57,511 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-12 18:00:57,511 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-12 18:00:58,304 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-12 18:00:58,454 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 139 ms. Found 4 JPA repository interfaces.
+2023-07-12 18:00:59,195 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 4200 (https)
+2023-07-12 18:00:59,207 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 18:00:59,208 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-07-12 18:00:59,208 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-07-12 18:00:59,339 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-07-12 18:00:59,339 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1827 ms
+2023-07-12 18:00:59,678 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-07-12 18:00:59,823 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-07-12 18:00:59,952 INFO liquibase.database [restartedMain] Set default schema name to public
+2023-07-12 18:01:00,058 INFO liquibase.lockservice [restartedMain] Successfully acquired change log lock
+2023-07-12 18:01:00,085 INFO liquibase.changelog [restartedMain] Reading resource: db/changelog/changes/v100.sql
+2023-07-12 18:01:00,175 INFO liquibase.changelog [restartedMain] Reading from public.databasechangelog
+2023-07-12 18:01:00,357 INFO liquibase.lockservice [restartedMain] Successfully released change log lock
+2023-07-12 18:01:00,464 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-12 18:01:00,503 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-07-12 18:01:00,608 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-12 18:01:00,693 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-07-12 18:01:00,715 INFO Hibernate Types [restartedMain] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2023-07-12 18:01:00,729 INFO org.hibernate.envers.boot.internal.EnversServiceImpl [restartedMain] Envers integration enabled? : true
+2023-07-12 18:01:01,194 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-12 18:01:01,200 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 18:01:01,324 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-12 18:01:01,542 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ef986f0, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d595099, org.springframework.security.web.header.HeaderWriterFilter@6ad32316, org.springframework.security.web.csrf.CsrfFilter@13a760d, org.springframework.security.web.authentication.logout.LogoutFilter@3a28ccef, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@68793b5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5172b645, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@322f3e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f0c7ecb, org.springframework.security.web.session.SessionManagementFilter@52e7c6ba, org.springframework.security.web.access.ExceptionTranslationFilter@5084331b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44bebf43]
+2023-07-12 18:01:01,741 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-12 18:01:01,891 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-07-12 18:01:02,360 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-07-12 18:01:02,374 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 18:01:02,496 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 4200 (https) with context path ''
+2023-07-12 18:01:02,507 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Started SpringbootBackendApplication in 5.477 seconds (JVM running for 6.074)
+2023-07-12 18:11:44,724 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 18:11:44,727 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-07-12 18:11:44,729 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-07-12 18:11:48,500 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Starting SpringbootBackendApplication using Java 17.0.7 on TORANA-L138 with PID 2976 (C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java\target\classes started by VivekRoy in C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java)
+2023-07-12 18:11:48,502 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-07-12 18:11:48,552 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-12 18:11:48,553 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-12 18:11:49,403 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-12 18:11:49,563 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 148 ms. Found 4 JPA repository interfaces.
+2023-07-12 18:11:50,314 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 4200 (https)
+2023-07-12 18:11:50,327 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 18:11:50,328 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-07-12 18:11:50,328 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-07-12 18:11:50,468 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-07-12 18:11:50,469 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1915 ms
+2023-07-12 18:11:50,762 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-07-12 18:11:50,897 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-07-12 18:11:51,022 INFO liquibase.database [restartedMain] Set default schema name to public
+2023-07-12 18:11:51,130 INFO liquibase.lockservice [restartedMain] Successfully acquired change log lock
+2023-07-12 18:11:51,164 INFO liquibase.changelog [restartedMain] Reading resource: db/changelog/changes/v100.sql
+2023-07-12 18:11:51,249 INFO liquibase.changelog [restartedMain] Reading from public.databasechangelog
+2023-07-12 18:11:51,278 INFO liquibase.lockservice [restartedMain] Successfully released change log lock
+2023-07-12 18:11:51,404 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-12 18:11:51,449 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-07-12 18:11:51,563 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-12 18:11:51,642 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-07-12 18:11:51,664 INFO Hibernate Types [restartedMain] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2023-07-12 18:11:51,679 INFO org.hibernate.envers.boot.internal.EnversServiceImpl [restartedMain] Envers integration enabled? : true
+2023-07-12 18:11:52,135 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-12 18:11:52,141 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 18:11:52,240 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-12 18:11:52,449 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e73a792, org.springframework.security.web.context.SecurityContextPersistenceFilter@47cf9c39, org.springframework.security.web.header.HeaderWriterFilter@3586a594, org.springframework.security.web.csrf.CsrfFilter@13c7287c, org.springframework.security.web.authentication.logout.LogoutFilter@4feb2cdd, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@782b18f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3dcc6550, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5721c8e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ef986f0, org.springframework.security.web.session.SessionManagementFilter@1c69958f, org.springframework.security.web.access.ExceptionTranslationFilter@5aebae39, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a095c70]
+2023-07-12 18:11:52,626 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-12 18:11:52,756 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-07-12 18:11:53,227 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-07-12 18:11:53,243 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 18:11:53,387 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 4200 (https) with context path ''
+2023-07-12 18:11:53,397 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Started SpringbootBackendApplication in 5.311 seconds (JVM running for 5.924)
+2023-07-12 18:11:58,273 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [https-jsse-nio-4200-exec-9] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-12 18:11:58,273 INFO org.springframework.web.servlet.DispatcherServlet [https-jsse-nio-4200-exec-9] Initializing Servlet 'dispatcherServlet'
+2023-07-12 18:11:58,274 INFO org.springframework.web.servlet.DispatcherServlet [https-jsse-nio-4200-exec-9] Completed initialization in 1 ms
+2023-07-12 18:17:03,632 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-3] Nandita  Sharma
+2023-07-12 18:29:12,950 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 18:29:12,953 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-07-12 18:29:12,955 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-07-12 18:29:23,712 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Starting SpringbootBackendApplication using Java 17.0.7 on TORANA-L138 with PID 9496 (C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java\target\classes started by VivekRoy in C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java)
+2023-07-12 18:29:23,715 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-07-12 18:29:23,753 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-12 18:29:23,754 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-12 18:29:24,504 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-12 18:29:24,646 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 133 ms. Found 4 JPA repository interfaces.
+2023-07-12 18:29:25,387 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 4200 (https)
+2023-07-12 18:29:25,401 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 18:29:25,402 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-07-12 18:29:25,403 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-07-12 18:29:25,541 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-07-12 18:29:25,542 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1787 ms
+2023-07-12 18:29:25,873 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-07-12 18:29:26,056 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-07-12 18:29:26,221 INFO liquibase.database [restartedMain] Set default schema name to public
+2023-07-12 18:29:26,339 INFO liquibase.lockservice [restartedMain] Successfully acquired change log lock
+2023-07-12 18:29:26,361 INFO liquibase.changelog [restartedMain] Reading resource: db/changelog/changes/v100.sql
+2023-07-12 18:29:26,445 INFO liquibase.changelog [restartedMain] Reading from public.databasechangelog
+2023-07-12 18:29:26,488 INFO liquibase.lockservice [restartedMain] Successfully released change log lock
+2023-07-12 18:29:26,666 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-12 18:29:26,762 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-07-12 18:29:26,931 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-12 18:29:27,027 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-07-12 18:29:27,054 INFO Hibernate Types [restartedMain] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2023-07-12 18:29:27,071 INFO org.hibernate.envers.boot.internal.EnversServiceImpl [restartedMain] Envers integration enabled? : true
+2023-07-12 18:29:27,624 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-12 18:29:27,631 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 18:29:27,782 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-12 18:29:28,164 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61d53eab, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f12be47, org.springframework.security.web.header.HeaderWriterFilter@5b54ae2c, org.springframework.security.web.csrf.CsrfFilter@144b90b7, org.springframework.security.web.authentication.logout.LogoutFilter@796e349c, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@77b82c2b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d44611, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3680c7a4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29ef292c, org.springframework.security.web.session.SessionManagementFilter@1d3684e9, org.springframework.security.web.access.ExceptionTranslationFilter@179e9764, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ab84954]
+2023-07-12 18:29:28,405 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-12 18:29:28,590 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-07-12 18:29:29,129 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-07-12 18:29:29,150 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 18:29:29,325 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 4200 (https) with context path ''
+2023-07-12 18:29:29,339 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Started SpringbootBackendApplication in 6.076 seconds (JVM running for 7.123)
+2023-07-12 18:34:47,376 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 18:34:47,378 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-07-12 18:34:47,381 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-07-12 18:34:49,478 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Starting SpringbootBackendApplication using Java 17.0.7 on TORANA-L138 with PID 20196 (C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java\target\classes started by VivekRoy in C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java)
+2023-07-12 18:34:49,479 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-07-12 18:34:49,519 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-12 18:34:49,519 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-12 18:34:50,227 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-12 18:34:50,355 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 119 ms. Found 4 JPA repository interfaces.
+2023-07-12 18:34:51,079 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 4200 (https)
+2023-07-12 18:34:51,094 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 18:34:51,095 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-07-12 18:34:51,095 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-07-12 18:34:51,217 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-07-12 18:34:51,218 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1698 ms
+2023-07-12 18:34:51,467 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-07-12 18:34:51,604 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-07-12 18:34:51,729 INFO liquibase.database [restartedMain] Set default schema name to public
+2023-07-12 18:34:51,830 INFO liquibase.lockservice [restartedMain] Successfully acquired change log lock
+2023-07-12 18:34:51,851 INFO liquibase.changelog [restartedMain] Reading resource: db/changelog/changes/v100.sql
+2023-07-12 18:34:51,923 INFO liquibase.changelog [restartedMain] Reading from public.databasechangelog
+2023-07-12 18:34:51,956 INFO liquibase.lockservice [restartedMain] Successfully released change log lock
+2023-07-12 18:34:52,047 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-12 18:34:52,086 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-07-12 18:34:52,198 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-12 18:34:52,279 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-07-12 18:34:52,302 INFO Hibernate Types [restartedMain] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2023-07-12 18:34:52,316 INFO org.hibernate.envers.boot.internal.EnversServiceImpl [restartedMain] Envers integration enabled? : true
+2023-07-12 18:34:52,788 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-12 18:34:52,794 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 18:34:52,894 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-12 18:34:53,188 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30eb860e, org.springframework.security.web.context.SecurityContextPersistenceFilter@7accef15, org.springframework.security.web.header.HeaderWriterFilter@4855617, org.springframework.security.web.csrf.CsrfFilter@7beb6524, org.springframework.security.web.authentication.logout.LogoutFilter@724dafad, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@30ce1ed9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fa10e36, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30e0e208, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@335adfac, org.springframework.security.web.session.SessionManagementFilter@583d42b6, org.springframework.security.web.access.ExceptionTranslationFilter@695f15ba, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44d8ed42]
+2023-07-12 18:34:53,398 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-12 18:34:53,571 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-07-12 18:34:54,044 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-07-12 18:34:54,057 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 18:34:54,169 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 4200 (https) with context path ''
+2023-07-12 18:34:54,177 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Started SpringbootBackendApplication in 5.137 seconds (JVM running for 5.873)
+2023-07-12 18:34:59,175 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [https-jsse-nio-4200-exec-5] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-12 18:34:59,175 INFO org.springframework.web.servlet.DispatcherServlet [https-jsse-nio-4200-exec-5] Initializing Servlet 'dispatcherServlet'
+2023-07-12 18:34:59,176 INFO org.springframework.web.servlet.DispatcherServlet [https-jsse-nio-4200-exec-5] Completed initialization in 1 ms
+2023-07-12 18:34:59,853 INFO com.example.IMDB.controller.OrganizationController [https-jsse-nio-4200-exec-5] Nandita  Sharma
+2023-07-12 18:39:38,616 INFO com.example.IMDB.service.OrganizationServiceImplementation [https-jsse-nio-4200-exec-3] Something wrong happend!!
+2023-07-12 18:39:38,620 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [https-jsse-nio-4200-exec-3] Resolved [com.example.IMDB.exception.ResourceNotFoundException: Not found!]
+2023-07-12 18:47:03,934 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 18:47:03,934 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-07-12 18:47:03,934 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-07-12 18:47:05,699 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [FILE_ROLLING]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.IMDB.SpringbootBackendApplication.main(SpringbootBackendApplication.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [FILE_ROLLING]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+2023-07-12 18:47:24,927 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [FILE_ROLLING]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [ERROR-CONSOLE]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.IMDB.SpringbootBackendApplication.main(SpringbootBackendApplication.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [FILE_ROLLING]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [ERROR-CONSOLE]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+2023-07-12 19:10:16,532 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [ERROR_CONSOLE]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.IMDB.SpringbootBackendApplication.main(SpringbootBackendApplication.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [ERROR_CONSOLE]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+2023-07-12 19:10:50,448 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [ERROR_CONSOLE]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.IMDB.SpringbootBackendApplication.main(SpringbootBackendApplication.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [ERROR_CONSOLE]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+2023-07-12 19:11:01,021 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [ERROR_CONSOLE]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.IMDB.SpringbootBackendApplication.main(SpringbootBackendApplication.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [ERROR_CONSOLE]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+2023-07-12 19:16:25,501 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@34:28 - no applicable action for [root], current ElementPath  is [[configuration][logger][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@35:42 - no applicable action for [appender-ref], current ElementPath  is [[configuration][logger][root][appender-ref]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@39:28 - no applicable action for [root], current ElementPath  is [[configuration][logger][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@40:47 - no applicable action for [appender-ref], current ElementPath  is [[configuration][logger][root][appender-ref]]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.IMDB.SpringbootBackendApplication.main(SpringbootBackendApplication.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@34:28 - no applicable action for [root], current ElementPath  is [[configuration][logger][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@35:42 - no applicable action for [appender-ref], current ElementPath  is [[configuration][logger][root][appender-ref]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@39:28 - no applicable action for [root], current ElementPath  is [[configuration][logger][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@40:47 - no applicable action for [appender-ref], current ElementPath  is [[configuration][logger][root][appender-ref]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+2023-07-12 19:19:31,405 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@25:28 - no applicable action for [root], current ElementPath  is [[configuration][logger][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@26:47 - no applicable action for [appender-ref], current ElementPath  is [[configuration][logger][root][appender-ref]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@40:28 - no applicable action for [root], current ElementPath  is [[configuration][logger][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@41:42 - no applicable action for [appender-ref], current ElementPath  is [[configuration][logger][root][appender-ref]]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.IMDB.SpringbootBackendApplication.main(SpringbootBackendApplication.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@25:28 - no applicable action for [root], current ElementPath  is [[configuration][logger][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@26:47 - no applicable action for [appender-ref], current ElementPath  is [[configuration][logger][root][appender-ref]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@40:28 - no applicable action for [root], current ElementPath  is [[configuration][logger][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@41:42 - no applicable action for [appender-ref], current ElementPath  is [[configuration][logger][root][appender-ref]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+2023-07-12 19:23:29,546 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Starting SpringbootBackendApplication using Java 17.0.7 on TORANA-L138 with PID 5024 (C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java\target\classes started by VivekRoy in C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java)
+2023-07-12 19:23:29,547 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-07-12 19:23:29,601 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-12 19:23:29,602 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-12 19:23:30,420 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-12 19:23:30,562 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 133 ms. Found 4 JPA repository interfaces.
+2023-07-12 19:23:31,323 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 4200 (https)
+2023-07-12 19:23:31,336 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 19:23:31,337 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-07-12 19:23:31,337 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-07-12 19:23:31,455 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-07-12 19:23:31,456 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1853 ms
+2023-07-12 19:23:31,717 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-07-12 19:23:31,852 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-07-12 19:23:31,973 INFO liquibase.database [restartedMain] Set default schema name to public
+2023-07-12 19:23:32,049 INFO liquibase.lockservice [restartedMain] Successfully acquired change log lock
+2023-07-12 19:23:32,067 INFO liquibase.changelog [restartedMain] Reading resource: db/changelog/changes/v100.sql
+2023-07-12 19:23:32,136 INFO liquibase.changelog [restartedMain] Reading from public.databasechangelog
+2023-07-12 19:23:32,171 INFO liquibase.lockservice [restartedMain] Successfully released change log lock
+2023-07-12 19:23:32,279 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-12 19:23:32,319 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-07-12 19:23:32,431 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-12 19:23:32,514 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-07-12 19:23:32,536 INFO Hibernate Types [restartedMain] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2023-07-12 19:23:32,550 INFO org.hibernate.envers.boot.internal.EnversServiceImpl [restartedMain] Envers integration enabled? : true
+2023-07-12 19:23:33,000 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-12 19:23:33,006 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 19:23:33,102 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-12 19:23:33,337 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@533bdfb5, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f0c7ecb, org.springframework.security.web.header.HeaderWriterFilter@64c6a4f3, org.springframework.security.web.csrf.CsrfFilter@19e5ed24, org.springframework.security.web.authentication.logout.LogoutFilter@dbf174f, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@1bf8ca11, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f908615, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2eb45856, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ec0aba, org.springframework.security.web.session.SessionManagementFilter@3e73a792, org.springframework.security.web.access.ExceptionTranslationFilter@5db097bd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18b9e737]
+2023-07-12 19:23:33,534 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-12 19:23:33,674 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-07-12 19:23:34,163 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-07-12 19:23:34,173 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 19:23:34,275 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 4200 (https) with context path ''
+2023-07-12 19:23:34,283 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Started SpringbootBackendApplication in 5.164 seconds (JVM running for 5.742)
+2023-07-12 19:24:10,512 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 19:24:10,514 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-07-12 19:24:10,516 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-07-12 19:24:12,356 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@37:42 - no applicable action for [appender-ref], current ElementPath  is [[configuration][logger][level][appender-ref]]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.IMDB.SpringbootBackendApplication.main(SpringbootBackendApplication.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@37:42 - no applicable action for [appender-ref], current ElementPath  is [[configuration][logger][level][appender-ref]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+2023-07-12 19:24:38,856 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Starting SpringbootBackendApplication using Java 17.0.7 on TORANA-L138 with PID 4088 (C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java\target\classes started by VivekRoy in C:\Users\VivekRoy\OneDrive - Torana Inc\Desktop\loggWithA\tamra-java)
+2023-07-12 19:24:38,858 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-07-12 19:24:38,922 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-12 19:24:38,922 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-12 19:24:39,655 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-12 19:24:39,796 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 133 ms. Found 4 JPA repository interfaces.
+2023-07-12 19:24:40,513 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 4200 (https)
+2023-07-12 19:24:40,526 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 19:24:40,527 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-07-12 19:24:40,527 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-07-12 19:24:40,642 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-07-12 19:24:40,642 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1718 ms
+2023-07-12 19:24:40,908 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-07-12 19:24:41,037 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-07-12 19:24:41,164 INFO liquibase.database [restartedMain] Set default schema name to public
+2023-07-12 19:24:41,286 INFO liquibase.lockservice [restartedMain] Successfully acquired change log lock
+2023-07-12 19:24:41,303 INFO liquibase.changelog [restartedMain] Reading resource: db/changelog/changes/v100.sql
+2023-07-12 19:24:41,372 INFO liquibase.changelog [restartedMain] Reading from public.databasechangelog
+2023-07-12 19:24:41,403 INFO liquibase.lockservice [restartedMain] Successfully released change log lock
+2023-07-12 19:24:41,501 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-12 19:24:41,540 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-07-12 19:24:41,646 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-12 19:24:41,727 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-07-12 19:24:41,750 INFO Hibernate Types [restartedMain] This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2023-07-12 19:24:41,765 INFO org.hibernate.envers.boot.internal.EnversServiceImpl [restartedMain] Envers integration enabled? : true
+2023-07-12 19:24:42,215 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-12 19:24:42,221 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 19:24:42,329 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-12 19:24:42,595 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@533bdfb5, org.springframework.security.web.context.SecurityContextPersistenceFilter@7463574d, org.springframework.security.web.header.HeaderWriterFilter@468a311d, org.springframework.security.web.csrf.CsrfFilter@7846040a, org.springframework.security.web.authentication.logout.LogoutFilter@1377feb3, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@60fe847, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2335147d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ef986f0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ec0aba, org.springframework.security.web.session.SessionManagementFilter@ed7fbf0, org.springframework.security.web.access.ExceptionTranslationFilter@7b64fd47, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18b9e737]
+2023-07-12 19:24:42,813 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-12 19:24:42,950 INFO com.azure.spring.cloud.core.implementation.factory.AbstractAzureServiceClientBuilderFactory [restartedMain] Will configure the default credential of type DefaultAzureCredential for class com.azure.identity.DefaultAzureCredentialBuilder.
+2023-07-12 19:24:43,453 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-07-12 19:24:43,463 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-4200"]
+2023-07-12 19:24:43,558 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 4200 (https) with context path ''
+2023-07-12 19:24:43,566 INFO com.example.IMDB.SpringbootBackendApplication [restartedMain] Started SpringbootBackendApplication in 5.131 seconds (JVM running for 5.711)
+2023-07-12 19:34:49,031 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 19:34:49,033 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-07-12 19:34:49,035 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

@@ -1,0 +1,42 @@
+spring:
+  jpa:
+    open_in_view: false
+    show_sql: true
+    properties:
+      hibernate:
+        current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
+        default_schema: imdb
+    hibernate:
+      hbm2ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQL95Dialect
+
+
+  application:
+    name: IMDB
+
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/IMDB
+    username: postgres
+    password: 123456
+
+
+
+server:
+
+  #  forward-headers-strategy: native
+  port: 2020
+
+
+
+
+logging:
+  file: applog
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [${spring.application.name},%X{traceId},%X{spanId},${PID:- }] %-5level %logger{36}.%M : %msg%n"
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS}  %magenta([${spring.application.name},%X{traceId},%X{spanId},${PID:- }]) %highlight(%-5level) %logger{36}.%M : %msg%n"
+  level:
+    root: info
+
+
+
